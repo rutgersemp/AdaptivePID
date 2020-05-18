@@ -13,21 +13,7 @@
 # .. fixed bug that prepended PID settings to total layer rather than directly before M106 command
 # ... Added support for M107 as well
 
-# ----
-
-## Uses -
-## M220 S<factor in percent> - set speed factor override percentage
-## M221 S<factor in percent> - set flow factor override percentage
-## M221 S<factor in percent> T<0-#toolheads> - set flow factor override percentage for single extruder
-## M104 S<temp> T<0-#toolheads> - set extruder <T> to target temperature <S>
-## M140 S<temp> - set bed target temperature
-## M106 S<PWM> - set fan speed to target speed <S>
-## M605/606 to save and recall material settings on the UM2
-
 from ..Script import Script
-import io
-#from plugins.PostProcessingPlugin.Script import Script
-#from UM.Logger import Logger
 
 class AdaptivePID(Script):
     version = "0.02"
