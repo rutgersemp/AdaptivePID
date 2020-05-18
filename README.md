@@ -9,6 +9,7 @@ Script will then linearly interpolate between these PID values and set them usin
 ## TODO
 
 * Fix potential bug with decimal PWM values
+
 CURA seems to output decimal values (such as 127.5 at 50% fan) that the scripts does not pick up on
 
 * Add functionality to anticipate cooldown
